@@ -51,9 +51,10 @@ def get_followers(csv_file=None):
     for pid, dic in posts.items():
         print("{0}: {1}".format(pid, dic["followers"]))
 
-
-data = {"current": [1, 3, 5, 6, 8, 9], "target": [1, 2, 5, 7, 9]}
-data2 = {"current": [1, 1, 3, 5, 6, 8, 9], "target": [1, 2, 5, 7, 9]}
-array_diff(**data)
-array_diff_dup_support(**data2)
-get_followers()
+        
+if __name__ == "__main__":
+    data = {"current": [1, 3, 5, 6, 8, 9], "target": [1, 2, 5, 7, 9]}
+    data2 = {"current": [1, 1, 3, 5, 6, 8, 9], "target": [1, 2, 5, 7, 9]}
+    array_diff(**data)
+    array_diff_dup_support(**data2)
+    get_followers()
